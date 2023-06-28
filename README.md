@@ -1,2 +1,1 @@
-# UTREF_practico_1
-Primer entrega práctica UTREF
+Primer entrega práctica UTREF métodos HTTP
