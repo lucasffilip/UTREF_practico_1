@@ -37,12 +37,12 @@ app.post("/", (req, res) => {
 });
 
 // Ruta para encontrar una fruta por ID
-// app.get("/:id", (req, res) => {
-//     const id = parseInt(req.params.id);
-//     const frutaPorID = BD.find((fruta) => fruta.id === id);
-//     if (!frutaPorID) res.status(404).send("No se encuentra la fruta");
-//     res.send(frutaPorID);
-// });
+app.get("/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const frutaPorID = BD.find((fruta) => fruta.id === id);
+    if (!frutaPorID) res.status(404).send("No se encuentra la fruta");
+    res.send(frutaPorID);
+});
 
 // Ruta para modificar una fruta por ID
 app.put("/:id", (req, res) => {
